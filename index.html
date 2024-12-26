@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Old numbers</h1>
+    <p id="value1"></p>
+
+    <h1>New numbers</h1>
+    <p id="value2"></p>
+
+    <script>
+     var original_num = [1,2 ,4,6,8,10, 12, 14,16];
+
+     function muliplicator(num){
+       return num*5;
+     }
+
+     var new_num = original_num.map(muliplicator)
+
+     document.getElementById("value1").innerHTML = original_num ;
+     document.getElementById("value2").innerHTML = new_num ;
+
+    </script>
+</body>
+</html>
